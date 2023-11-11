@@ -1,0 +1,97 @@
+.grid{
+    min-height: 100vh;
+    padding: $spacing-1;
+    display: grid;
+    margin-top: 100px;
+    &__quotation{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 35px;
+        height: 155px;
+    }
+    &__item{
+        z-index: -2;
+        background-color: $color-3;
+        border-radius: 20px;
+        padding: $spacing-2;
+        margin-bottom: $spacing-2;
+        position: relative;
+        .grid__header{
+            @include flex-grid;
+            .grid__avatar{
+                border-radius: 50%;
+            }
+            .grid__customer{
+                padding: $spacing-1;
+                line-height: 0;
+                .grid__name{
+                    font-weight: bolder;
+                    color: $color-2;
+                    font-size: 18px;
+                }
+                .grid__intro{
+                    font-weight: lighter;
+                    color: $color-4;
+                    font-size: 14px;
+                }
+            }
+        }
+        .grid__main{
+            font-weight: lighter;
+            .grid__title{
+                color: $color-2;
+                font-size: 25px;
+            }
+            .grid__copy{
+                color: $color-2;
+                font-size: 16px;
+            }
+        }
+    }
+    &__item--2{
+        background-color: $color-1;
+    }
+
+    &__item--3{
+        background-color: $color-2;
+        .grid__header{
+            .grid__customer{
+                .grid__name{
+                    color: $color-1;
+                }
+            }
+        }
+        .grid__main{
+            .grid__title{
+                color: $color-1;
+            }
+            .grid__copy{
+                color: $color-4;
+            }
+        }
+    }
+
+    &__item--4{
+        background-color: $color-1;
+    }
+
+    &__item--5{
+        background-color: $color-2;
+        .grid__header{
+            .grid__customer{
+                .grid__name{
+                    color: $color-1;
+                }
+            }
+        }
+        .grid__main{
+            .grid__title{
+                color: $color-1;
+            }
+            .grid__copy{
+                color: $color-4;
+            }
+        }
+    }
+}

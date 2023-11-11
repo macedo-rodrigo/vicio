@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixin';
+@import 'header';
+@import 'title';
+@import 'grid';
+
+body{
+    margin: 0;
+    background-image: url(/S3_CSSIV_V/vicio/assets/burger.png);
+    background-size: 400%;
+    background-position: left bottom;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: $spacing-2;
+}

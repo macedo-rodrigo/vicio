@@ -1,0 +1,114 @@
+/*colores*/
+/*espacios*/
+.header {
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__cta {
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: 1.5px solid #000;
+  font-weight: bolder;
+}
+
+.title__text {
+  max-width: 65%;
+  margin: 50px 0;
+}
+
+.grid {
+  min-height: 100vh;
+  padding: 10px;
+  display: grid;
+  margin-top: 100px;
+}
+.grid__quotation {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  height: 155px;
+}
+.grid__item {
+  z-index: -2;
+  background-color: #F71414;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.grid__item .grid__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.grid__item .grid__header .grid__avatar {
+  border-radius: 50%;
+}
+.grid__item .grid__header .grid__customer {
+  padding: 10px;
+  line-height: 0;
+}
+.grid__item .grid__header .grid__customer .grid__name {
+  font-weight: bolder;
+  color: #FFF;
+  font-size: 18px;
+}
+.grid__item .grid__header .grid__customer .grid__intro {
+  font-weight: lighter;
+  color: gray;
+  font-size: 14px;
+}
+.grid__item .grid__main {
+  font-weight: lighter;
+}
+.grid__item .grid__main .grid__title {
+  color: #FFF;
+  font-size: 25px;
+}
+.grid__item .grid__main .grid__copy {
+  color: #FFF;
+  font-size: 16px;
+}
+.grid__item--2 {
+  background-color: #000;
+}
+.grid__item--3 {
+  background-color: #FFF;
+}
+.grid__item--3 .grid__header .grid__customer .grid__name {
+  color: #000;
+}
+.grid__item--3 .grid__main .grid__title {
+  color: #000;
+}
+.grid__item--3 .grid__main .grid__copy {
+  color: gray;
+}
+.grid__item--4 {
+  background-color: #000;
+}
+.grid__item--5 {
+  background-color: #FFF;
+}
+.grid__item--5 .grid__header .grid__customer .grid__name {
+  color: #000;
+}
+.grid__item--5 .grid__main .grid__title {
+  color: #000;
+}
+.grid__item--5 .grid__main .grid__copy {
+  color: gray;
+}
+
+body {
+  margin: 0;
+  background-image: url(/S3_CSSIV_V/vicio/assets/burger.png);
+  background-size: 400%;
+  background-position: left bottom;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}/*# sourceMappingURL=styles.css.map */
